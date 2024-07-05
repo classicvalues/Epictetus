@@ -1,20 +1,22 @@
 ![Epictetus Banner](Epictetus.png)
 
-# Pedago
+# Epictetus
 
-Pedago is a Python package designed for educational purposes, focusing on managing courses, assessments, users (students and teachers), and generating various reports. It includes utility functions for common operations. Pedago aims to simplify the development of educational applications and platforms.
+Epictetus Next.js is a web application built with Next.js, TypeScript, and Tailwind CSS. It serves as a platform for [describe what the project aims to achieve or its purpose].
 
 ## Features
 
-- **Course Management:** Create, update, delete courses. Enroll and manage students.
-- **Assessment Handling:** Create quizzes and assignments, grade assessments.
-- **User Management:** Add, remove, and manage students and teachers.
-- **Report Generation:** Generate user activity, course performance, financial, and enrollment reports.
-- **Utility Functions:** Includes helper functions for common operations.
+- [List key features and functionalities of the application]
+- [E.g., User authentication and authorization]
+- [E.g., Dashboard for managing user data]
+- [E.g., Integration with external APIs]
 
 ## Installation
 
-You can install Pedago using pip:
+To get started with Epictetus Next.js, follow these steps:
 
-```bash
-pip install pedago
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/classicvalues/epictetus-nextjs.git
+   cd epictetus-nextjs
