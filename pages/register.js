@@ -17,11 +17,11 @@ export default function Register() {
         name,
         email,
         password,
-        role
+        role,
       });
       console.log(response.data);
     } catch (error) {
-      console.error("There was an error registering!", error);
+      console.error('There was an error registering!', error);
     }
   };
 
@@ -32,38 +32,40 @@ export default function Register() {
       </Head>
       <Container>
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
-          <h1 className="text-4xl font-bold">Register</h1>
-          <form className="mt-8" onSubmit={handleSubmit}>
-            <input 
-              type="text" 
-              placeholder="Name" 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
-              className="mb-4 px-4 py-2 border rounded w-full" 
+          <h1 className="text-4xl font-bold text-primary dark:text-accent">Register</h1>
+          <form className="mt-8 w-full max-w-md" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="mb-4 px-4 py-2 border rounded w-full"
             />
-            <input 
-              type="email" 
-              placeholder="Email" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              className="mb-4 px-4 py-2 border rounded w-full" 
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mb-4 px-4 py-2 border rounded w-full"
             />
-            <input 
-              type="password" 
-              placeholder="Password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              className="mb-4 px-4 py-2 border rounded w-full" 
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="mb-4 px-4 py-2 border rounded w-full"
             />
-            <select 
-              value={role} 
-              onChange={(e) => setRole(e.target.value)} 
+            <select
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
               className="mb-4 px-4 py-2 border rounded w-full"
             >
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
             </select>
-            <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded w-full">Register</button>
+            <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded w-full">
+              Register
+            </button>
           </form>
         </div>
       </Container>
