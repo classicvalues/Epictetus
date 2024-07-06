@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 import FeaturedPost from '@components/FeaturedPost';
 import CardPost from '@components/CardPost';
 import Container from '@components/Container';
@@ -15,6 +16,14 @@ export default function Home() {
         <title>Home &mdash; Epictetus</title>
       </Head>
       <Container>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+          <h1 className="text-6xl font-bold">Welcome to Epictetus!</h1>
+          <div className="mt-6">
+            <Link href="/register">
+              <a className="px-4 py-2 bg-blue-500 text-white rounded">Register</a>
+            </Link>
+          </div>
+        </div>
         <FeaturedPost />
         <div className="flex -mx-4 flex-wrap mt-6">
           {posts.map(post => (
@@ -25,5 +34,5 @@ export default function Home() {
         </div>
       </Container>
     </Layout>
-  )
+  );
 }
