@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following versions of the Epictetus project are currently being supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -14,8 +13,28 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability within this project, please follow these steps:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Email the Security Team:** Send an email to [security@epictetus.school](mailto:security@epictetus.school) with details about the vulnerability. Include:
+   - A detailed description of the vulnerability.
+   - Steps to reproduce the issue.
+   - Potential impact of the vulnerability.
+   - Any suggested solutions or fixes.
+
+2. **Confirmation:** You will receive an acknowledgment of your report within 48 hours.
+
+3. **Investigation:** Our security team will investigate the reported vulnerability. You may be contacted for additional information or clarification.
+
+4. **Resolution:** If the vulnerability is confirmed, we will work on a fix and provide updates on the progress. You can expect regular updates until the issue is resolved.
+
+5. **Disclosure:** Once the vulnerability is fixed, we will publish a security advisory. We will credit the reporter unless they prefer to remain anonymous.
+
+## Expectations
+
+When reporting a vulnerability, please follow these guidelines:
+
+- Provide as much detail as possible.
+- Avoid exploiting the vulnerability or causing harm.
+- Allow us time to investigate and fix the issue before disclosing it publicly.
+
+Your cooperation and support in improving the security of Epictetus are greatly appreciated.
