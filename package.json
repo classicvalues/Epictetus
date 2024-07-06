@@ -17,7 +17,7 @@
     "postcss": "8.4.31"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "10.2.6",
     "postcss": "8.4.39",
     "tailwindcss": "2.2.19",
     "@tailwindcss/typography": "0.4.1",
