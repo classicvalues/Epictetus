@@ -1,9 +1,10 @@
+// tailwind.config.js
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     container: {
       center: true,
@@ -17,17 +18,17 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        primary: '#1DA1F2',
-        secondary: '#14171A',
-        accent: '#657786',
-        background: '#E1E8ED',
-        surface: '#F5F8FA',
-      },
       fontFamily: {
         sans: ['Patrick Hand', 'Arial', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
         mono: ['Fira Code', 'monospace'],
+      },
+      colors: {
+        primary: '#2563EB',
+        secondary: '#1E40AF',
+        accent: '#22D3EE',
+        background: '#E1E8ED',
+        surface: '#F5F8FA',
       },
       spacing: {
         '128': '32rem',
@@ -46,6 +47,9 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
     plugin(({ addUtilities }) => {
       const utilities = {
         '.bg-search': {
