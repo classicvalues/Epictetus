@@ -17,7 +17,7 @@ export default function InfoPost({
         date={date}
         title={title}
       />
-      <p className="text-white/60 mt-5 w-10/12">
+      <p className="text-gray-600 mt-5">
         {shortDescription}
       </p>
       <PostAuthor
